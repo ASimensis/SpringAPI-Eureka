@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: second-application
+  cloud:
+    config:
+      enabled: false
+server:
+  port: 8082
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8083/eureka}
